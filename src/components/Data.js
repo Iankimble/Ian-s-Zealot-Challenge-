@@ -73,24 +73,33 @@ class ProfileData extends Component {
           <Row>
             <Col>
               <h1>People</h1>
+
               <Form>
-                <Form.Group>
-                  <Form.Control placeholder="name search" />
-                </Form.Group>
-                <Button
-                  variant="primary"
-                  type="submit"
-                  size="lg"
-                  block
-                  style={{
-                    color: "white",
-                    backgroundColor: "black",
-                    border: "none",
-                  }}
-                >
-                  Search
-                </Button>
+                <Row>
+                  <Col lg={8}>
+                    <Form.Group>
+                      <Form.Control placeholder="name search" />
+                    </Form.Group>
+                  </Col>
+                  <Col lg={4}>
+                    <Button
+                      variant="primary"
+                      type="submit"
+                      size="lg"
+                      block
+                      style={{
+                        color: "white",
+                        backgroundColor: "black",
+                        border: "none",
+                      }}
+                    >
+                      Search
+                    </Button>
+                  </Col>
+                </Row>
               </Form>
+
+              <br />
             </Col>
           </Row>
           <Row>{profileList}</Row>
